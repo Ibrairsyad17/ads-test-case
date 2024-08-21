@@ -70,4 +70,8 @@
   .animate-nav{
     @apply transition-transform duration-300 ease-in-out;
   }
+
+  html{
+    scroll-behavior: smooth;
+  }
 }
