@@ -9,7 +9,7 @@ import {
 
 const TabsOpportunities = () => {
   return (
-    <Tabs defaultValue="account" className="w-full">
+    <Tabs defaultValue="business" className="w-full">
       <TabsList>
         <TabsTrigger value="business">Bisnis dan Pemasaran</TabsTrigger>
         <TabsTrigger value="commercial">Komersial dan Penjualan</TabsTrigger>
