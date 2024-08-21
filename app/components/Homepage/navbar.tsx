@@ -26,8 +26,8 @@ const Navbar = () => {
 
   return (
     <div
-      className={`lg:max-w-5xl sticky py-3.5 backdrop-blur w-full bg-white/30 top-0 lg:mt-10 flex flex-col lg:flex-row z-50 items-center justify-center lg:justify-between lg:rounded-xl mx-auto shadow px-8 font-semibold ${
-        scrolled ? "bg-white/70 shadow-sm" : ""
+      className={`lg:max-w-3xl sticky lg:fixed py-3.5 bg-white w-full lg:mt-8 flex flex-col lg:flex-row z-50 items-center justify-center lg:justify-between lg:rounded-xl mx-auto shadow px-8 font-semibold lg:left-1/2 lg:transform lg:-translate-x-1/2 ${
+        scrolled ? "bg-white shadow-sm" : ""
       }`}
     >
       <div className="w-full mx-auto flex justify-between items-center">
