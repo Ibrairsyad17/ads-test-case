@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div
       className={`lg:max-w-3xl sticky lg:fixed py-3.5 bg-white w-full lg:mt-8 flex flex-col lg:flex-row z-50 items-center justify-center lg:justify-between lg:rounded-xl mx-auto shadow px-8 font-semibold lg:left-1/2 lg:transform lg:-translate-x-1/2 ${
-        scrolled ? "bg-white shadow-sm" : ""
+        scrolled ? "bg-white/50 backdrop-blur shadow-sm" : ""
       }`}
     >
       <div className="w-full mx-auto flex justify-between items-center">
