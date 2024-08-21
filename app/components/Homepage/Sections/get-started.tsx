@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 const GetStarted = () => {
   return (
     <section className="h-auto lg:h-screen bg-[url('/assets/img/main-bg.svg')] bg-cover pb-10">
-      <div className="lg:max-w-7xl grid lg:grid-cols-8 mx-auto justify-items-center place-items-center h-full pt-8 px-8 lg:px-0">
+      <div className="lg:max-w-7xl grid lg:grid-cols-8 mx-auto justify-items-center place-items-center h-full pt-20 px-8 lg:px-0">
         <div className="lg:col-span-1 hidden lg:block lg:order-1"></div>
         <div className="lg:col-span-3 flex flex-col space-y-8 lg:order-2 order-2">
           <h1 className="text-3xl lg:text-5xl font-bold ">
