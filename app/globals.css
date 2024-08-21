@@ -66,4 +66,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .animate-nav{
+    @apply transition-transform duration-300 ease-in-out;
+  }
 }
