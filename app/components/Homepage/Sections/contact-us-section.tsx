@@ -4,7 +4,10 @@ import Image from "next/image";
 
 const ContactUsSection = () => {
   return (
-    <div className="h-screen lg:col-span-6 w-full flex justify-center items-center">
+    <div
+      className="h-screen lg:col-span-6 w-full flex justify-center items-center"
+      id="contact-us"
+    >
       <div className="grid lg:grid-cols-6 gap-6">
         <div className="lg:col-span-3 flex flex-col space-y-6">
           <Link href="/" className="flex space-x-5 justify-start items-start">
