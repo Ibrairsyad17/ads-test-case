@@ -1,0 +1,35 @@
+import React from "react";
+import Image from "next/image";
+
+const CampaignSection = () => {
+  return (
+    <section className="h-auto lg:h-screen bg-white pb-10">
+      <div className="lg:max-w-7xl grid lg:grid-cols-10 mx-auto justify-items-center place-items-center h-full pt-20 px-8 lg:px-0">
+        <div className="lg:col-span-1 hidden lg:block lg:order-1"></div>
+        <div className="grid lg:grid-cols-7 gap-4 lg:order-2 order-1 lg:col-span-9">
+          <div className="lg:col-span-3 flex flex-col justify-center lg:items-center space-y-8 order-2 lg:order-1 justify-self-start">
+            <h1 className="text-3xl lg:text-5xl font-bold ">
+              Right Time, Effective Messages
+            </h1>
+            <p className="text-sm text-gray-900 font-semibold">
+              Fowardin memungkinkan Anda untuk merencanakan pengiriman iklan
+              yang tepat sasaran. Manfaatkan fitur Campaign kami untuk
+              mengoptimalkan pesan iklan Anda sehingga hasilnya lebih akurat dan
+              sukses. Dengan Fowardin, setiap pesan iklan memiliki dampak yang
+              lebih besar.
+            </p>
+          </div>
+          <Image
+            src="/assets/img/lp-3.svg"
+            alt="feature-1"
+            width={1000}
+            height={1000}
+            className="w-auto h-72 lg:h-[30rem] lg:col-span-3 justify-self-center lg:justify-self-start lg:order-2 order-1 drop-shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CampaignSection;
