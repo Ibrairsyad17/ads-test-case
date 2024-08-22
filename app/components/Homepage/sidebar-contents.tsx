@@ -29,7 +29,7 @@ const SidebarContents = ({ sections }: SidebarContentsProps) => {
 
   return (
     <nav
-      className={`fixed left-16 z-50
+      className={`fixed left-14 z-50
         transform top-1/2 -translate-y-1/2
         lg:block hidden
         border-l-2 ${
@@ -39,13 +39,15 @@ const SidebarContents = ({ sections }: SidebarContentsProps) => {
         }
         `}
     >
-      <ul className="space-y-2">
+      <ul className="space-y-1">
         {sections.map((section) => (
           <li key={section.id}>
             <Link
               href={`#${section.id}`}
               className={`block px-4 py-1 rounded text-sm ${
-                activeSection === section.id ? "text-gray-900 font-bold" : ""
+                activeSection === section.id
+                  ? "text-gray-900 font-extrabold"
+                  : ""
               } ${
                 activeSection === "faq" || activeSection === "contact-us"
                   ? "text-white"

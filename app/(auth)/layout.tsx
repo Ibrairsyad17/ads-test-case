@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import HeaderLabel from "@/app/components/LoginPage/header-label";
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <section className="min-h-screen w-full lg:grid-cols-12 grid bg-[#ECF2FA]">
+      <HeaderLabel />
+      {children}
+    </section>
   );
 }
