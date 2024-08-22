@@ -47,7 +47,7 @@ const SignUpForm = () => {
             </div>
             <div className="flex space-x-3">
               <Select>
-                <SelectTrigger className="w-[100px]">
+                <SelectTrigger className="w-[100px] bg-[#ECF2FA] lg:bg-white shadow lg:shadow-none">
                   <SelectValue placeholder="Kode" />
                 </SelectTrigger>
                 <SelectContent>
