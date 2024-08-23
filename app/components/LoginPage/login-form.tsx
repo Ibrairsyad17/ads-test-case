@@ -35,6 +35,7 @@ const LoginForm = () => {
               <Input
                 className="bg-[#ECF2FA] lg:bg-white shadow lg:shadow-none"
                 id="password"
+                type="password"
                 placeholder="Password"
               />
             </div>

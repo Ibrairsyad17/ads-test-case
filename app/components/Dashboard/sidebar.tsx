@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import NavItemOptions from "@/app/components/Dashboard/nav-item-options";
 
 const Sidebar = () => {
   return (
@@ -43,25 +44,7 @@ const Sidebar = () => {
             <UserCircle className="mr-2 h-4 w-4" />
             Device
           </Button>
-          <div>
-            <Button className="w-full justify-between" variant="ghost">
-              <div className="flex items-center">
-                <Users className="mr-2 h-4 w-4" />
-                Contacts
-              </div>
-              <ChevronDown className="h-4 w-4" />
-            </Button>
-            <div className="ml-4 mt-2 flex flex-col gap-2">
-              <Button className="justify-start" variant="ghost">
-                <UserCircle className="mr-2 h-4 w-4" />
-                Contacts
-              </Button>
-              <Button className="justify-start" variant="ghost">
-                <Users className="mr-2 h-4 w-4" />
-                Groups
-              </Button>
-            </div>
-          </div>
+          <NavItemOptions />
           <div>
             <Button className="w-full justify-between" variant="ghost">
               <div className="flex items-center">

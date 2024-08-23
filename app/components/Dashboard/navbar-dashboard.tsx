@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Bell, Settings } from "lucide-react";
+import { Bell, LogOut, Settings } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ModeToggle } from "@/components/dark-mode-button";
 
@@ -20,6 +20,9 @@ const NavbarDashboard = () => {
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </div>
+        <Button size="icon" variant="outline" className="rounded-full">
+          <LogOut className="h-4 w-4" />
+        </Button>
         <Button size="icon" variant="outline" className="rounded-full">
           <Settings className="h-4 w-4" />
         </Button>
