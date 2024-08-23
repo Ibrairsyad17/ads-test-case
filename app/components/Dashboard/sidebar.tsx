@@ -4,7 +4,6 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   ChevronDown,
   MessageSquare,
-  Users,
   UserCircle,
   LayoutGrid,
   Send,
@@ -36,7 +35,10 @@ const Sidebar = () => {
       </div>
       <ScrollArea className="flex-1">
         <div className="flex flex-col gap-2 p-4">
-          <Button className="justify-start" variant="ghost">
+          <Button
+            className="justify-start bg-blue-600 text-white"
+            variant="ghost"
+          >
             <LayoutGrid className="mr-2 h-4 w-4" />
             Dashboard
           </Button>

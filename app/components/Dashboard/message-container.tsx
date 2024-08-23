@@ -22,7 +22,7 @@ const MessageContainer = () => {
               </Avatar>
               <div className="flex flex-col justify-start items-start lg:col-span-3 justify-self-end">
                 <p className="text-sm font-semibold text-right">Anda</p>
-                <p className="text-xs font-semibold text-gray-500 text-right">
+                <p className="text-xs font-semibold text-gray-500 lg:text-right">
                   Hai apa kabarmu hari ini? Semoga...
                 </p>
               </div>
@@ -41,7 +41,7 @@ const MessageContainer = () => {
               </Avatar>
               <div className="flex flex-col justify-start items-start lg:col-span-3 justify-self-end">
                 <p className="text-sm font-semibold text-right">Anda</p>
-                <p className="text-xs font-semibold text-gray-500 text-right">
+                <p className="text-xs font-semibold text-gray-500 lg:text-right">
                   Hai apa kabarmu hari ini? Semoga...
                 </p>
               </div>
@@ -62,7 +62,7 @@ const MessageContainer = () => {
                 <p className="text-sm font-semibold text-right">
                   Ihsanul Afkar
                 </p>
-                <p className="text-xs font-semibold text-gray-500 text-right">
+                <p className="text-xs font-semibold text-gray-500 lg:text-right">
                   Hai apa kabarmu hari ini? Semoga...
                 </p>
               </div>

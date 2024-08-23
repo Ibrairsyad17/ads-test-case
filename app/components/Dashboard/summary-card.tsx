@@ -15,7 +15,7 @@ const SummaryCard = () => {
         <CardTitle className="text-xl font-bold">Ringkasan hari ini</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
-        <div className="flex justify-between items-center">
+        <div className="flex lg:flex-row flex-col space-y-4 lg:space-y-0 lg:justify-between lg:items-center">
           <Select>
             <SelectTrigger className="w-[200px] shadow h-12">
               <SelectValue placeholder="Device" />

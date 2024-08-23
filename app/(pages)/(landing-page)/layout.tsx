@@ -15,6 +15,7 @@ const sections = [
   { id: "campaign", title: "Campaign" },
   { id: "auto-reply", title: "Auto Reply" },
   { id: "opportunity", title: "Opportunity" },
+  { id: "pricing", title: "Pricing" },
   { id: "faq", title: "FAQ" },
   { id: "contact-us", title: "Contact Us" },
 ];

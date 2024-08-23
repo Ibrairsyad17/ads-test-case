@@ -8,11 +8,11 @@ const HeaderDashboard = () => {
         Selamat Siang, Alif
       </h1>
       <div className="flex items-center space-x-4">
-        <div className="flex flex-col justify-start items-end space-y-1 dark:text-white">
+        <div className="pl-5 lg:pl-0 flex flex-col justify-start lg:items-end space-y-1 dark:text-white lg:order-1 order-2">
           <p className="text-xs text-gray-500 dark:text-white">
             Tanggal Hari Ini
           </p>
-          <p className="text-xs font-semibold text-gray-900 dark:text-white">
+          <p className="text-xs font-semibold text-gray-900 lg:order-2 order-1 dark:text-white">
             Selasa, 29 Agustus 2023
           </p>
         </div>
