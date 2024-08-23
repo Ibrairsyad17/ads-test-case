@@ -66,7 +66,7 @@ const MessageContainer = () => {
               </div>
             </div>
 
-            <Badge className="bg-blue-600">Terkirim</Badge>
+            <Badge className="bg-emerald-500">Diterima</Badge>
           </div>
           <div className="w-full pt-2 text-sm text-blue-600 flex justify-center items-center">
             Tampilkan lainnya
