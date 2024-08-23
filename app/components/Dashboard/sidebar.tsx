@@ -21,7 +21,7 @@ import Image from "next/image";
 
 const Sidebar = () => {
   return (
-    <div className="fixed top-0 start-0 bottom-0 flex h-screen w-64 flex-col bg-white">
+    <div className="fixed top-0 start-0 bottom-0 hidden lg:flex h-screen w-64 flex-col bg-white dark:bg-black">
       <div className="flex h-14 items-center justify-center px-4 pt-3">
         <Link href="/" className="flex space-x-5 justify-center items-center">
           <Image

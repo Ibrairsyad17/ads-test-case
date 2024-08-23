@@ -23,12 +23,12 @@ const MessageContainer = () => {
               <div className="flex flex-col justify-start items-start lg:col-span-3 justify-self-end">
                 <p className="text-sm font-semibold text-right">Anda</p>
                 <p className="text-xs font-semibold text-gray-500 text-right">
-                  Selasa, 29 Agustus 2023
+                  Hai apa kabarmu hari ini? Semoga...
                 </p>
               </div>
             </div>
 
-            <Badge className="bg-blue-600">Terkirim</Badge>
+            <Badge className="bg-blue-600 dark:text-white">Terkirim</Badge>
           </div>
           <div className="w-full flex space-x-4 justify-between items-center bg-muted px-2 py-2 rounded-lg">
             <div className="flex space-x-4 justify-between items-center">
@@ -42,12 +42,12 @@ const MessageContainer = () => {
               <div className="flex flex-col justify-start items-start lg:col-span-3 justify-self-end">
                 <p className="text-sm font-semibold text-right">Anda</p>
                 <p className="text-xs font-semibold text-gray-500 text-right">
-                  Selasa, 29 Agustus 2023
+                  Hai apa kabarmu hari ini? Semoga...
                 </p>
               </div>
             </div>
 
-            <Badge className="bg-blue-600">Terkirim</Badge>
+            <Badge className="bg-blue-600 dark:text-white">Terkirim</Badge>
           </div>
           <div className="w-full flex space-x-4 justify-between items-center bg-muted px-2 py-2 rounded-lg">
             <div className="flex space-x-4 justify-between items-center">
@@ -59,14 +59,16 @@ const MessageContainer = () => {
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
               <div className="flex flex-col justify-start items-start lg:col-span-3 justify-self-end">
-                <p className="text-sm font-semibold text-right">Anda</p>
+                <p className="text-sm font-semibold text-right">
+                  Ihsanul Afkar
+                </p>
                 <p className="text-xs font-semibold text-gray-500 text-right">
-                  Selasa, 29 Agustus 2023
+                  Hai apa kabarmu hari ini? Semoga...
                 </p>
               </div>
             </div>
 
-            <Badge className="bg-emerald-500">Diterima</Badge>
+            <Badge className="bg-emerald-500 dark:text-white">Diterima</Badge>
           </div>
           <div className="w-full pt-2 text-sm text-blue-600 flex justify-center items-center">
             Tampilkan lainnya
