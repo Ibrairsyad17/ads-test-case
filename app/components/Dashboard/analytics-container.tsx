@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SummaryCard from "@/app/components/Dashboard/summary-card";
 import TotalCard from "@/app/components/Dashboard/total-card";
+import GraphContainer from "@/app/components/Dashboard/graph-container";
 
 const AnalyticsContainer = () => {
   return (
@@ -13,6 +14,7 @@ const AnalyticsContainer = () => {
         <div className="grid lg:grid-cols-5 gap-5">
           <SummaryCard />
           <TotalCard />
+          <GraphContainer />
         </div>
       </CardContent>
     </Card>

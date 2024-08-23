@@ -1,8 +1,9 @@
 import React from "react";
 import { Card, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
+import { ProgressRed } from "@/app/components/Miscellaneous/progress-red";
+import { ProgressGreen } from "@/app/components/Miscellaneous/progress-green";
 
 const PackageInfoCard = () => {
   return (
@@ -26,7 +27,7 @@ const PackageInfoCard = () => {
         <span className="text-xs lg:col-span-1 justify-self-start">
           Devices
         </span>
-        <Progress value={70} className="justify-self-start lg:col-span-4" />
+        <ProgressRed value={70} className="justify-self-start lg:col-span-4" />
         <div className="flex flex-col justify-end items-end lg:col-span-3 justify-self-end">
           <p className="text-xs font-semibold text-gray-900 text-right">
             Upgrade paket untuk meningkatkan batasan fitur yang ada
@@ -37,7 +38,10 @@ const PackageInfoCard = () => {
         <span className="text-xs lg:col-span-1 justify-self-start">
           Contacts
         </span>
-        <Progress value={30} className="justify-self-start lg:col-span-4" />
+        <ProgressGreen
+          value={30}
+          className="justify-self-start lg:col-span-4"
+        />
         <div className="flex flex-col justify-end items-end lg:col-span-3 justify-self-end">
           <Button className="w-full border border-blue-600 bg-white text-blue-600 hover:bg-blue-600 hover:text-white text-xs">
             Upgrade Paket
