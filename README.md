@@ -1,6 +1,12 @@
 ## ADS Test Case Forwardin
 
-This is a test case for ADS MSIB Internship. You can see the demo [here](https://ads-test-case.vercel.app/).
+This is a test case for ADS MSIB Internship. You can see the demo [here](https://ads-test-case.vercel.app/). Or you can type the following URL in your browser:
+
+```
+https://ads-test-case.vercel.app/
+```
+
+Or you can clone this repository and run it on your local machine.
 
 ### How to run the project
 
