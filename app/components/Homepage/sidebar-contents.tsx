@@ -29,7 +29,7 @@ const SidebarContents = ({ sections }: SidebarContentsProps) => {
 
   return (
     <nav
-      className={`fixed left-14 z-50
+      className={`fixed left-12 z-50
         transform top-1/2 -translate-y-1/2
         lg:block hidden
         border-l-2 ${
@@ -44,7 +44,7 @@ const SidebarContents = ({ sections }: SidebarContentsProps) => {
           <li key={section.id}>
             <Link
               href={`#${section.id}`}
-              className={`block px-4 py-1 rounded text-sm ${
+              className={`block px-4 py-1 rounded text-xs ${
                 activeSection === section.id
                   ? "text-gray-900 font-extrabold"
                   : ""
