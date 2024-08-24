@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import {
   Card,
   CardContent,
@@ -17,8 +18,15 @@ import {
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 const SignUpForm = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const router = useRouter();
+
   return (
     <Card className="lg:w-5/12 w-full lg:bg-white bg-[#ECF2FA] shadow-none lg:shadow-lg border-none lg:border py-5">
       <CardHeader>
@@ -35,6 +43,7 @@ const SignUpForm = () => {
                 className="bg-[#ECF2FA] lg:bg-white shadow lg:shadow-none"
                 id="name"
                 placeholder="Username"
+                onChange={(e) => setUsername(e.target.value)}
               />
             </div>
             <div className="flex flex-col space-y-3">
@@ -43,6 +52,7 @@ const SignUpForm = () => {
                 id="email"
                 type="email"
                 placeholder="Email"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="flex space-x-3">
@@ -60,8 +70,9 @@ const SignUpForm = () => {
               <Input
                 className="bg-[#ECF2FA] lg:bg-white shadow lg:shadow-none"
                 id="number"
-                type="number"
+                type="text"
                 placeholder="Nomor Telepon"
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
             <div className="flex flex-col space-y-3">
@@ -69,6 +80,8 @@ const SignUpForm = () => {
                 className="bg-[#ECF2FA] lg:bg-white shadow lg:shadow-none"
                 id="password"
                 placeholder="Password"
+                type="password"
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
           </div>
