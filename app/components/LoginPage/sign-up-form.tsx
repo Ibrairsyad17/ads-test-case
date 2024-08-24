@@ -31,6 +31,7 @@ const SignUpForm = () => {
   const router = useRouter();
 
   const handleRegister = async () => {
+    setLoading(true);
     try {
       const response = await axios.post(
         "/api/users",
@@ -143,6 +144,11 @@ const SignUpForm = () => {
             Masuk di sini
           </Link>
         </div>
+        {loading && (
+          <p className="text-gray-500 w-full py-1 text-center border border-gray-500 bg-gray-100 rounded mt-2">
+            Loading...
+          </p>
+        )}
       </CardFooter>
     </Card>
   );
