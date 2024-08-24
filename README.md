@@ -26,6 +26,7 @@ npm install
 
 - Create a new database in your MySQL server 'forwardin'
 - Or you are using PostgreSQL, you can also create a new database 'forwardin'
+- Would like to using Vercel for host database? check feature/postgresql-db branch for the configuration
 
 4. Configure the environment variables
 
