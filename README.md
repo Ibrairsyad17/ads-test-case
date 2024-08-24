@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## ADS Test Case Forwardin
 
-## Getting Started
+This is a test case for ADS MSIB Internship. You can see the demo [here](https://ads-test-case.vercel.app/).
 
-First, run the development server:
+### How to run the project
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/Ibrairsyad17/ads-test-case.git
+```
+
+2. Install the dependencies
+
+```bash
+npm install
+```
+
+3. Configure the database
+
+- Create a new database in your MySQL server 'forwardin'
+- Or you are using PostgreSQL, you can also create a new database 'forwardin'
+
+4. Configure the environment variables
+
+- Copy the `.env.example` file to `.env`
+- Open the `.env` file and configure the database connection and other variables
+- If you are using MySQL, you can use the following configuration:
+
+```
+DATABASE_URL="mysql://[YOUR-USER]:[YOUR-PASSWORD]@localhost:3306/forwardin"
+```
+
+- If you are using PostgreSQL, you can use the following configuration:
+
+```
+DATABASE_URL="postgresql://[YOUR-USER]:[YOUR-PASSWORD]@localhost:5432/forwardin"
+```
+
+- After that configure the NEXTAUTH_URL variable to your localhost or your development URL
+
+```
+NEXTAUTH_URL="http://localhost:3000"
+```
+
+- Next configure the NEXTAUTH_SECRET variable to your secret key
+
+you can generate the secret key by running the following command:
+
+```bash
+openssl rand -base64 32
+```
+
+- Copy the generated key and paste it to the `.env` file
+
+```
+NEXTAUTH_SECRET="[YOUR-SECRET-KEY]"
+```
+
+5. Run the migrations
+
+```bash
+npx prisma migrate dev
+```
+
+6. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+7. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+8. You can sign up and create a new account on sign up page. After that you can login to the dashboard.
